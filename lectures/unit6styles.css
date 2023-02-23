@@ -1,0 +1,14 @@
+        /* h1 is our selector color is our property and seagreen is our value */
+        /* font size is percentage based... 200% is twice the default size, font size can also be em based... 2 em would be twice as big as default */
+        /* Font family provides a list of fonts that the site will try to use... you need to have the fonts on your computer */
+        /* font weight describes the boldness of the font */
+        h1{
+            color:seagreen;
+            /* font-size: 200%; */
+            font-size: 1em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 200;
+        }
+        p a {color:seagreen;}
+        #amazonlink {color:seagreen}
+        .tantext {color:burlywood}
