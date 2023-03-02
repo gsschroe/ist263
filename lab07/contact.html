@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <title>Contact</title>
+        <link rel="stylesheet", href="styles.css">
+    </head>
+        <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Contact</h1>
+        <p>
+            Greg Schroeder<br>
+            727 S Crouse Ave, Syracuse, NY 13210<br>
+            <a href="mailto:gsschroe@syr.edu">Greg Schroeder Email</a> <br>
+            <a href="https://www.linkedin.com/in/schroedergreg/" target="_blank">My LinkedIn Address</a><br>
+            <img src="../images/linkedin.sized.png" alt="LinkedIn logo"><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11663.869372701178!2d-76.1361176!3d43.0421186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a1ee8fdc31%3A0xa6f9433e7837504a!2sThe%20Marshall%20Syracuse!5e0!3m2!1sen!2sus!4v1675355973138!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </p>
+        <h2>Contact Form</h2>
+        <form action="https://formspree.io/f/mwkjloze" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br>
+            <label for="aboutyou">About You:</label><br>
+            <textarea id="aboutyou" name="aboutyou" rows="5" ></textarea><br>
+            <label for="education">Highest Level of Education</label>
+            <select id="education" name="education">
+                <option value="highschool">Highschool Diploma</option>
+                <option value="undergrad">Undergraduate Degree</option>
+                <option value="graduate">Graduate Degree</option>
+                <option value="n/a">None</option>
+            </select><br>
+            <input type="submit" value="submit">
+        </form>
+        </body>
+</html>
