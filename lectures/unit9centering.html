@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering</title>
+    <style>
+        p{text-align: center;}
+        h1, div{background-color: powderblue;}
+        div{
+            /* only centers if blovk element is less than 100% */
+            width: 50%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        section{
+            /* content cannot take up the full width */
+            /* will keep block level element 100% of the screen */
+            border: 2px dashed #000000;
+            display:flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Centering</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum totam rerum omnis veniam sint dolore illum inventore at nobis placeat suscipit harum veritatis adipisci, similique deleniti accusantium ab nihil quae!</p>
+    <h2>Text Centering</h2>
+    <h2>Block Centering</h2>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maiores dignissimos corporis fugiat veritatis quibusdam optio, totam, minima accusantium eum, mollitia molestias saepe repellat id pariatur omnis provident repudiandae quae.</div>
+    <h2>Flexbox Hack</h2>
+    <section>
+        <img src="../images/otto.png" alt="Otto the Orange">
+    </section>
+</body>
+</html>

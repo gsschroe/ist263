@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        nav{
+            background-color:powderblue;
+            padding: 10px;
+            color:red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            display: flex;
+            justify-content: flex-end; /* must be on row container */
+        }
+        nav div{
+            padding: 10px;
+        }
+        .nav2{
+            justify-content: space-around;
+        }
+        .nav3{
+            justify-content: space-between;
+        }
+        .nav4{
+            justify-content: space-between;
+        }
+        .navsplit{
+            display: flex;
+        }
+        body{
+            background-color: #FEFBEA;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+<h1>Navigation</h1>
+<h2>Flex-End</h2>
+    <nav>
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+<h2>Flex Space Around</h2>
+    <nav class="nav2">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+<h2>Flex Space Between</h2>
+    <nav class="nav3">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div>
+    </nav>
+
+<h2>Split Navigation</h2>
+    <nav class="nav4"> <!--Big Row with 2 Columns-->
+        <div class="navsplit"> <!--This is a column for big row and a row for nav items-->
+            <div>Home</div>
+            <div>About Us</div>
+            <div>Products</div>
+            <div>Contact</div>
+        </div>
+        <div class="navsplit">
+            <div>Twitter</div>
+            <div>Facebook</div>
+        </div>
+    </nav>
+</body>
+</html>
