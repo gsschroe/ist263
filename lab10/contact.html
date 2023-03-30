@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .div1, .div2 {display: flex; background-color:#dca865; border-radius: 1em; flex-wrap: wrap;}
+            .info, .links, .map, .form {margin: 10px; padding: 15px;}
+            .info {flex: 1;}
+            .links {flex: 2;}
+            .form{flex: 1;}
+            
+
+        </style>
+    </head>
+        <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Contact</h1>
+            <div class="div1">
+                <div class="info">
+                    <p>
+                        Greg Schroeder<br>
+                        727 S Crouse Ave, Syracuse, NY 13210<br>
+                    </p>
+                </div>
+                <div class="links">
+                    <p>
+                        <a href="mailto:gsschroe@syr.edu">Greg Schroeder Email</a> <br>
+                        <a href="https://www.linkedin.com/in/schroedergreg/" target="_blank">My LinkedIn Address</a><br>
+                        <img src="../images/linkedin.sized.png" alt="LinkedIn logo"><br>
+                    </p>
+                </div>
+            </div>
+        <h2>Contact Form</h2>
+            <div class="div2">
+                <div class="form">
+                    <form action="https://formspree.io/f/mwkjloze" method="post">
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname"><br>
+                        <br>
+                        <label for="aboutyou">About You:</label><br>
+                        <textarea id="aboutyou" name="aboutyou" rows="5" ></textarea><br>
+                        <br>
+                        <label for="education">Highest Level of Education:</label><br>
+                        <select id="education" name="education">
+                            <option value="highschool">Highschool Diploma</option>
+                            <option value="undergrad">Undergraduate Degree</option>
+                            <option value="graduate">Graduate Degree</option>
+                            <option value="n/a">None</option>
+                        </select><br>
+                        <br>
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11663.869372701178!2d-76.1361176!3d43.0421186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a1ee8fdc31%3A0xa6f9433e7837504a!2sThe%20Marshall%20Syracuse!5e0!3m2!1sen!2sus!4v1675355973138!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
+            </div>
+        </body>
+</html>
