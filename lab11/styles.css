@@ -1,0 +1,23 @@
+body{
+    background-color: #deba89;
+    color: #010173;
+    font-family:'Roboto Condensed', sans-serif;
+}
+a:hover {color:#4848a8;}
+nav {
+    background-color: #010173;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+nav a {color:#dca865;}
+nav a:hover {background-color:#dfc5a1;}
+ul{color:#010173}
+
+@media only screen and (max-width: 800px) {
+    nav a{
+        display: block;
+        max-width: 100%;
+        padding: 5px;
+    }
+}
+
