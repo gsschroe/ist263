@@ -9,16 +9,29 @@
             .copy{float: left;}
             .quote{float: right;}
             .img1{max-width: 100%;}
+            .skip{
+            background-color: orange;
+            padding: 5px;
+            border: 1px solid #000000;
+            text-decoration: none;
+            position: absolute; /*positions element relative to top-left of viewport */
+            top: 10px;
+            left:-999px; /*push it off the left side of the sceen */
+        }
+        .skip:focus{
+            left:10px /*bring it back when they tab to it */
+        }
         </style>
     </head>
     <body>
         <nav>
+            <a href="#main" class="skip">Skip to Cotent</a>
             <a href="index.html">Home</a>
             <a href="skills.html">Skills</a>
             <a href="contact.html">Contact</a>
         </nav>
         <header><img src="../images/biopic.png" alt="Little League MVP 2010, Greg Schroeder" class="img1"></header>
-        <main>
+        <main id="main">
         <h1>Greg Schroeder's Biography</h1>
         <h2>Personal Info:</h2>
         <p>Hi my name is Greg Schroeder. I am a Data Analytics major and I am hoping to use my degree in the sports field. I am an Eagle Scout and a Dean's List student. I love exploring, <strong>hanging with friends and family</strong>, and watching the Mets. My favorite people are my four nephews… I became an uncle when I was 14 :)<br>
