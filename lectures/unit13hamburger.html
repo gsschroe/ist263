@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+        #hamicon{width: 40px;}
+        .firstrow{display: flex;}
+
+        @media only screen and (min-width:800px) {
+            #hamicon, #close{display: none;}
+        }
+
+        @media only screen and (max-width:799px) {
+            a {display: block;}
+            #navLinks {display: none;}
+        }
+    </style>
+
+    <script>
+        function showNav() {
+            document.getElementById("navLinks").style.display = "block";
+        }
+
+        function hideNav() {
+            document.getElementById("navLinks").style.display= 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="firstrow">
+        <img id="hamicon" onclick="showNav();" src="http://laferger.github.io/ist263/images/hamburger.png" alt="hamburger icon">
+        <p id="close" onclick="hideNav();">X</p>
+    </div> 
+    <div id="navLinks">
+        <a href="">About</a>
+        <a href="">Skills</a>
+        <a href="">Contact</a>
+    </div>
+</body>
+</html>
