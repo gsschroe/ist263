@@ -11,111 +11,188 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
 </head>
+<script>
+    function showNav() {
+        document.getElementById("nav2").style.display = "block";
+    }
+
+    function hideNav() {
+        document.getElementById("nav2").style.display= 'none';
+    }
+</script>
 <body>
-    <nav>
+    <div class="firstrow">
+        <img id="hamicon" onclick="showNav();" src="../images/hamicon.png" alt="hamburger icon">
+        <p id="close" onclick="hideNav();">X</p>
+    </div> 
+    <div id="nav2">
+        <a href="#recap_link">Top 5 Games of 2022</a>
+        <a href="#stats_link">2022 Statistics</a>
+        <a href="#awards_link">2022 Awards</a>
+        <a href="#2023_link">2023 Outlook</a>
+    </div>
+
+    <nav class="nav">
             <a href="#recap_link">Top 5 Games of 2022</a>
             <a href="#stats_link">2022 Statistics</a>
             <a href="#awards_link">2022 Awards</a>
             <a href="#2023_link">2023 Outlook</a>
     </nav>
     <img src="../../project/images/banner2.jpg" class="banner" alt="Mets fans celebrating wild card win">
-        <article class="intro2">
+    <div class="intro">
+        <div class="intro2">
             <p class="intro2p">The 2022 Mets finished in second place in the National League’s Eastern Division with a record of 101-61 and earned them the fourth seed of the National League. The Mets record of 101-61 was best for fourth in the MLB in 2022 and went down as the franchises second best record of their historic franchises lifetime. Outlined on this webpage are the Mets best moments from their magical historic season, a featured statistics page, and an outlook for the 2023 season. </p>
-            <img src="../../project/images/nimmo_catch.png" class="nimmo_catch" alt="Brandon Nimmo robbing Justin Turner of a Home Run">
-            <br>
-        </article>
-        <article class="intro3">
+            <img src="../../project/images/nimmo_catch.jpg" class="nimmo_catch" alt="Brandon Nimmo robbing Justin Turner of a Home Run">
+        </div>
+        <div class="intro3">
             <p class="quote1">“This <span style="color: orange;">Mets</span> team… wherever they end up in 2022 just don't disappoint. They’ve got <span style="color: orange;">drama</span> in their back pocket night after day after day after night” ~ <span style="color: orange;">Howie Rose</span> Radio Voice of the New York Mets</p>
-        </article>
-        <div class="clear"></div>
+        </div>
+    </div>
+
+    <div class="intro22">
+        <p class="intro2p">The 2022 Mets finished in second place in the National League’s Eastern Division with a record of 101-61 and earned them the fourth seed of the National League. The Mets record of 101-61 was best for fourth in the MLB in 2022 and went down as the franchises second best record of their historic franchises lifetime. Outlined on this webpage are the Mets best moments from their magical historic season, a featured statistics page, and an outlook for the 2023 season. </p>
+        <img src="../../project/images/nimmo_catch.jpg" class="nimmo_catch" alt="Brandon Nimmo robbing Justin Turner of a Home Run">
+    </div>
+        <p class="quote11">“This <span style="color: orange;">Mets</span> team… wherever they end up in 2022 just don't disappoint. They’ve got <span style="color: orange;">drama</span> in their back pocket night after day after day after night” ~ <span style="color: orange;">Howie Rose</span> Radio Voice of the New York Mets</p>
     <hr class="hr1">
 
+    
 
-    <h1 class="recap_title1" id="recap_link"><strong>Top 5 Mets Games of 2022</strong></h1>
+
+    <div class="recap_title1"><h1 class="recap_title1" id="recap_link"><strong>Top 5 Mets Games of 2022</strong></h1></div>
     <h2 class="honerable_mentions">Honerable Mentions</h2>
 
-    <article class="top5">
+
+    <div class="row100">
+        <div class="col100">
+            <h3 class="game"><span style="color: blue;">HM:</span> Mets vs Marlins (7/9)</h3>
+            <p class="hm1_paragraph">On this hot summer afternoon in New York, the Mets hosted the Miami Marlins with the All Star Break on the horizon. This day was bigger than the game between the Mets and the Marlins however. On this day of the 2022 season the Mets retired the number of their World Series winning first baseman Keith Hernandez. Hernandez was a centerpiece of the historic 1986 season in which the Mets went all the way to win the championship. Of course this game was destined to have a magical finish. The Mets were tied entering extra innings after a well pitched game by both sides. The Marlins scored in the top of the 10th inning via a throwing error by Mets shortstop Francisco Lindor, and heading into the bottom of the 10th inning the Mets were trailing by a score of 4-3. The first two batters of the inning were quickly retired, bringing it to the Mets backup catcher Tomás Nido. Nido ripped a double down the third base line, plating Mark Canha and tying the score 4-4. Following the Nido double, Brandon Nimmo hit a comebacker to the Marlins pitcher who made a throwing error to first. That error allowed Nido to score and awarded Nimmo and the Mets the win on what has been dubbed, ‘Keith Hernandez Day’.</p>
+        </div>
+        <div class="col200">
+            <img src="../../project/images/keith.jpg" alt="Keith Hernandez speech on his retirement day." class="hm1_img">
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col300">
+            <img src="../../project/images/medina.jpg" alt="Adonis Medina first career save." class="hm2_img">
+        </div>
+        <div class="col400">
+            <h3 class="game"><span style="color: blue;">HM:</span> Mets at Dodgers (6/5)</h3>
+            <p class="hm2_paragraph">Currently in the midst of their West Coast road trip the Mets were taking on the Dodgers in Los Angeles. After dropping the first two games and winning the third of the four game set to the undisputed best team in the MLB Dodgers, the Mets were poised to tie the series up with a win in this game. Dealing with a few mid-season injuries to their premiere starters, the Mets had to look towards inexperienced rookie pitchers in this stretch of the season. After trailing for a majority of the game the Mets took the lead in the top of the 8th inning thanks to big hits by Pete Alonso and Tomás Nido. Leading 4-2 headed into the final inning, the Mets just needed 3 outs from their reliable reliever Seth Lugo. Lugo had been a staple of the Mets bullpen for several years leading up to this point, but unfortunately the veteran did not have his best outing this day. The Dodgers tied the game in the bottom of the 9th off the bat of journeyman Eddy Alvarez. All looked gloomy for the Mets who had used their best pitchers earlier in the game to try to lock up the win, and the Dodgers with their bullpen well rested looked like they were poised to win the game and win the series. In the top of the 10th the Mets took the lead off the bat of a J.D. Davis double, however that is all the Mets would muster. With the game on the line, the injured and tired Mets pitching staff turned to a very inexperienced Adonis Medina to try and close the Dodgers out. The rookie stepped up and retired the heart of the Dodgers batting order to secure the victory for him and his team, thus forcing a tie to the season series against the Dodgers. </p>
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col100">
+            <h3 class="game"><span style="color: blue;">HM:</span> Mets vs Cardinals (5/19)</h3>
+            <p class="hm3_paragraph">The implications between the Mets and Cardinals on this spring day were big. Not only were these teams both likely playoff contenders with playoff seeding on the line, there were bigger underlying issues at hand. This game was the deciding factor for the Mets vs the Cardinals season series and there was major beef between these teams this season. Earlier in the year, the Mets were in St. Louis when a fight broke out between Cardinals superstar Nolan Arenado and the entire Mets team. The dispute was over the Mets getting hit by plenty of pitches earlier in the game and then retaliating to try and hit the Cardinals third baseman. So, understandably with the season series on the line and underlying hatred towards one another this was a big game that both teams wanted to come out on top of. Heading into the bottom of the 9th the Mets lead by a score of 5-4. The previous 3 runs of the Cardinals this afternoon were all scored off the bat of Paul Goldschmidt, the eventual MVP of the National League for the 2022 season. After retiring the first couple of batters in the top of the 9th, up stepped Paul Goldschmidt. And with the game on the line against the Mets best reliever he delivered a game tying single. The Mets would fail to score in the top of the 9th and the Cardinals would then score in the top of the 10th inning to make it 6-5 Cardinals. With the Mets trailing heading into the bottom of the 10th and their season series on the line against a heated rival Cardinals, Mets first baseman Pete Alonso delivered. Pete crushed one of the first pitches he saw in the bottom of the 10th inning and launched a two-run homerun to secure the Mets with the victory against a heated opponent. </p>
+        </div>
+        <div class="col200">
+            <img src="../../project/images/helmet.jpg" alt="Pete Alonso celebrating after hitting home run." class="hm3_img">
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col300">
+            <img src="../../project/images/no_hitter.jpg" alt="Edwin Diaz celebrating no hitter." class="five_img">
+        </div>
+        <div class="col400">
+            <h3 class="cd"><span style="color: blue;">Number 5:</span> Mets vs Phillies (4/29)</h3>
+            <p class="five_paragraph">Starting off the list at the number 5 spot for the best Mets moments of the 2022 season was a historic victory for the club. On the cold night of April 29th, the Mets hosted their rival, the Philadelphia Phillies. The Mets took the lead in the bottom of the 5th inning off the bat of Jeff Mcneil, a lead that they would not relinquish the rest of the way. The offense was not the story of this game however, it was the pitching staff. In their entire history, the Mets have only ever thrown a no-hitter once. It was thrown by Johan Santana on June 1st 2012. This would be the night of the second no-hitter in Mets history. New Met, Tylor Megill started the game off with 5 innings of his own hitless effort. The special thing about this no-hitter was the combination of pitchers used however. After Megills stellar 5 innings the Mets turned to Drew Smith to continue the outing. Drew threw 1.1 hitless innings of his own to continue the attempt at history. Next up, Joely Rodriguez who offered one of his own hitless innings to keep the hope alive. Seth Lugo then came in after Rodriguez to finish the 8th inning off against the top of the Phillies order, which he did without allowing a hit. Finally, the door was open for the Mets to finish off this historic attempt at the franchises second no-hitter in history. Mets reliever Edwin Diaz, and eventual winner of the Reliever of the Year Award, got the call, and he was dominant. Diaz tossed a hitless inning of his own against some of the best hitters in the National League and the best hitters the Phillies had to offer. On this historic April night the Mets accomplished the first combined no-hitter of their franchises history.</p>
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col100">
+            <h3 class="cd"><span style="color: blue;">Number 4:</span> Mets vs Phillies (5/29)</h3>
+            <p class="four_paragraph">Number four on this list is again against the Phillies. The Mets faced off again versus the Phillies on May 29th at Citi Field. The Mets were dominant this series against the Phillies, handily winning both of the first two games of the series. Just like early on in the series, the Mets looked dominant against the Phillies early in this game. Thanks to the bats of Francisco Lindor, Eduardo Escobar, and Mark Canha the Mets got off to an early 3-0 lead. The Phillies answered with an RBI by Alec Bohm to make it 3-1. Headed into the end of the game the Mets sweep seemed inevitable. That is until newly acquired Phillies Outfielder Nicholas Castellanos hit a 3 run homerun to give the Phillies the lead and give the Philadelphia Fans his first signature moment on the team. This took the wind out of the Mets sails and the air out of the Stadium on this Sunday night. The Mets were trailing 4-3 heading into the bottom of the 9th inning where the first two batters of the inning were retired quickly. Down to their last out of the night, the Mets turned to their rookie Nick Plummer. Plummer was just called up from the AAA Syracuse Mets due to an injury to outfielder Starling Marte, and Plummer delivered. Cracking a ball deep into the right field seats, Nick Plummer had just secured his first major league hit, a game tying home run against the rival Phillies. Edwin Diaz quickly retired the Phillies in the top of the 10th and the Mets walked it off in the bottom half of the inning to secure the sweep.</p>
+        </div>
+        <div class="col200">
+            <img src="../../project/images/plummer.jpg" alt="Nick Plummer watching his home run." class="four_img">
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col300">
+            <img src="../../project/images/dom_dive.jpg" alt="Dom Smith diving into first." class="three_img">
+        </div>
+        <div class="col400">
+            <h3 class="cd"><span style="color: blue;">Number 3:</span> Mets at Cardinals (4/25))</h3>
+            <p class="three_paragraph">The first improbable finish of the New York Mets season lands third on their best finishes. This far into the season, the Mets had yet to have a signature win. The Mets were in St. Louis played the Cardinals this evening and found themselves trailing 2-0 heading into the top of the 9th after a pitchers duel dominated the entire game. This group of Mets players had yet to have a signature comeback together as a squad this season, but that was about to change. The Mets had a tall task however, having to face All Star closer Giovanny Gallegos with the game on the line. Two of the first three batters in the bottom of the 9th were retired leaving Eduardo Escobar on second base with the rest of the Mets order coming up and two outs. Mark Canha, Mets outfielder, hit a ground ball to third where the 9 time reigning gold glove winning Nolan Arenado stood. It looked like the game was over until Arenado made a throwing error on the play which allowed Canha to reach safely and Escobar to score. The Mets still trailed however 2-1 with two outs. Up next, Jeff Mcneil the Mets second baseman. Mcneil roped a double past the diving glove of first baseman Paul Goldschmidt and the Mets had the tying run on third and the go-ahead run on second with two outs. Next was Dom Smith, a Mets first round pick several drafts ago who had struggled in his few big league seasons. Smith, fighting for a roster spot, hit a ball right to the first baseman. Hustling all the way, Dom beat the pitcher to the bag and was safe. Jankowski scored easily from third but it was the hustle of Jeff Mcneil that provided the go-ahead run. Mcneil scored from second on the play and gave the Mets the lead 3-2. Brandon Nimmo added a two run home-run of his own to extend the Mets lead 5-2, a lead that they would not give up. </p>
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col100">
+            <h3 class="cd"><span style="color: blue;">Number 2:</span> Mets at Phillies (8/21)</h3>
+            <p class="two_paragraph">The number two spot on the Mets best moments of 2022 comes again against the Phillies. Up to this point in the season the Mets had had their way with the Phillies winning 13 of their 18 meetings up to this point. Of course, the Mets needed to finish off their season series against the Phillies with an incredible win. It did not seem like the Phillies wanted to go down in embarrassing fashion against the Mets this late in the season after dropping the majority of their matchups. In the bottom of the first the Phillies got ahead early with a 4 run inning thanks to a 3-run home run by Alec Bohm. The Mets fought back bit by bit and by the top of the fourth inning the game was tied 4-4. However, the Phillies had other plans. In the bottom of the 4th, Bohm struck again with another 3-run homerun, his second of the game. All looked bleak for the Mets in this contest after fighting back just to trail again by a score of 7-4. With the Phillies bats on fire and the Mets bullpen tired they had to turn to a rookie. Nate Fisher, who was working in a bank as a teller only a few months ago thought his baseball dream was dead. But no, Fisher got the ball here with the game being 7-4 and needing to keep this score. Fisher pitched 3 scoreless innings to keep the Mets in the game making a historic MLB debut. The score stayed 7-4 until the Mets began threatening in the top of the seventh inning. With singles by Mets sluggers Pete Alonso and Daniel Vogelbach the door was open for another Mets comeback against the Phillies. Mark Canha delivered a 3-run homerun of his own to tie the game up 7-7. The game stayed this way until Mets killer Jean Segura parked a ball into the left field seats in the bottom of the 8th inning to put the Phillies back on top 8-7. The Mets were looking at a loss to their rivals to end a dominant season against them. In the top of the ninth inning Jeff Mcneil started the inning with a double off of David Robertson to set the table. Up next, Mark Canha who already offered a game tying homerun earlier in the game. Canha struck again… this time with a deep fly to left field, a 2-run homerun to put the Mets back on top 9-8. Nimmo added a homerun of his own to put the Mets up 10-8. That lead would end up being enough as the Mets won the game 10-9 to finish off a dominant 14-5 record against the Phillies in 2022.</p>
+        </div>
+        <div class="col200">
+            <img src="../../project/images/canha.jpg" alt="Mark Canha celebrating his second home run of the day." class="two_img">
+        </div>
+    </div>
+
+    <div class="row100">
+        <div class="col300">
+            <img src="../../project/images/7_run_comeback.jpg" alt="Mets bench celebrating 7-run comeback." class="one_img">
+        </div>
+        <div class="col400">
+            <h3 class="cd"><span style="color: blue;">Number 1:</span> Mets at Phillies (5/5)</h3>
+            <p class="one_paragraph">Of course the number one spot on this list had to be against none other than the Phillies. On this night the Mets were opening up a new series against their I-95 rival in Philadelphia. The game looked to be over early when the Mets were looking down the barrel of a 7-0 deficit. Trailing by 7, the Mets did not give up. The fight began with a homerun by Starling Marte in the top of the 6th inning to make it 7-1. This effort seemed to be wasted however because the Mets were trailing by 6 runs still heading into the last inning. The Mets had only overcome a 6 run deficit in the ninth inning once in their history. With all odds against them, the Mets did not give up. Starling Marte singled to start the top of the 9th. Mets shortstop Francisco Lindor then roped a two-run homerun into right center field making the score 7-3 Phillies. Pete Alonso then added a double, and Eduardo Escobar lined out. With one out in the bottom of the 9th the Mets still looked like all hope was lost. Jeff Mcneil singled, moving Alonso to third. Mark Canha came up with one out and hit a single of his own, scoring Alonso making the score 7-4. Dom Smith’s struggles continued where he struck out leaving the Mets down to their last out down 7-4. J.D. Davis doubled down the third base line to score Jeff Mcneil and make the score 7-5. The Mets pinch ran for Davis bringing in Travis Jankowski. With a runner on third and the tying run on second Brandon Nimmo served a ball up the middle and Traivs Jankowski scored from second to tie the game 7-7. Up next, the man who started the inning, Starling Marte. Marte would then take the first pitch of his at bat deep to center for a double, scoring Nimmo from first. The Mets had done it, something they had only done once in their history and finished the 7-run comeback. The score would hold as the Mets would go on to win 8-7. </p>
+        </div>
+    </div>
+
+
+    <div class="row200">
         <h3 class="game"><span style="color: blue;">HM:</span> Mets vs Marlins (7/9)</h3>
         <p class="hm1_paragraph">On this hot summer afternoon in New York, the Mets hosted the Miami Marlins with the All Star Break on the horizon. This day was bigger than the game between the Mets and the Marlins however. On this day of the 2022 season the Mets retired the number of their World Series winning first baseman Keith Hernandez. Hernandez was a centerpiece of the historic 1986 season in which the Mets went all the way to win the championship. Of course this game was destined to have a magical finish. The Mets were tied entering extra innings after a well pitched game by both sides. The Marlins scored in the top of the 10th inning via a throwing error by Mets shortstop Francisco Lindor, and heading into the bottom of the 10th inning the Mets were trailing by a score of 4-3. The first two batters of the inning were quickly retired, bringing it to the Mets backup catcher Tomás Nido. Nido ripped a double down the third base line, plating Mark Canha and tying the score 4-4. Following the Nido double, Brandon Nimmo hit a comebacker to the Marlins pitcher who made a throwing error to first. That error allowed Nido to score and awarded Nimmo and the Mets the win on what has been dubbed, ‘Keith Hernandez Day’.</p>
-    </article>
-    <img src="../../project/images/keith.png" alt="Keith Hernandez speech on his retirement day." class="hm1_img">
-    <div class="clear"></div>
+        <img src="../../project/images/keith.jpg" alt="Keith Hernandez speech on his retirement day." class="hm1_img">
+    </div>
 
-
-    <article class="top4">    
+    <div class="row200">
         <h3 class="game"><span style="color: blue;">HM:</span> Mets at Dodgers (6/5)</h3>
         <p class="hm2_paragraph">Currently in the midst of their West Coast road trip the Mets were taking on the Dodgers in Los Angeles. After dropping the first two games and winning the third of the four game set to the undisputed best team in the MLB Dodgers, the Mets were poised to tie the series up with a win in this game. Dealing with a few mid-season injuries to their premiere starters, the Mets had to look towards inexperienced rookie pitchers in this stretch of the season. After trailing for a majority of the game the Mets took the lead in the top of the 8th inning thanks to big hits by Pete Alonso and Tomás Nido. Leading 4-2 headed into the final inning, the Mets just needed 3 outs from their reliable reliever Seth Lugo. Lugo had been a staple of the Mets bullpen for several years leading up to this point, but unfortunately the veteran did not have his best outing this day. The Dodgers tied the game in the bottom of the 9th off the bat of journeyman Eddy Alvarez. All looked gloomy for the Mets who had used their best pitchers earlier in the game to try to lock up the win, and the Dodgers with their bullpen well rested looked like they were poised to win the game and win the series. In the top of the 10th the Mets took the lead off the bat of a J.D. Davis double, however that is all the Mets would muster. With the game on the line, the injured and tired Mets pitching staff turned to a very inexperienced Adonis Medina to try and close the Dodgers out. The rookie stepped up and retired the heart of the Dodgers batting order to secure the victory for him and his team, thus forcing a tie to the season series against the Dodgers. </p>
-    </article>
-    <br>
-    <img src="../../project/images/medina.jpeg" alt="Adonis Medina first career save." class="hm2_img">
-    <div class="clear"></div>
-
-
-    <article class="top5">     
+        <img src="../../project/images/medina.jpg" alt="Adonis Medina first career save." class="hm2_img">
+    </div>
+    
+    <div class="row200">
         <h3 class="game"><span style="color: blue;">HM:</span> Mets vs Cardinals (5/19)</h3>
         <p class="hm3_paragraph">The implications between the Mets and Cardinals on this spring day were big. Not only were these teams both likely playoff contenders with playoff seeding on the line, there were bigger underlying issues at hand. This game was the deciding factor for the Mets vs the Cardinals season series and there was major beef between these teams this season. Earlier in the year, the Mets were in St. Louis when a fight broke out between Cardinals superstar Nolan Arenado and the entire Mets team. The dispute was over the Mets getting hit by plenty of pitches earlier in the game and then retaliating to try and hit the Cardinals third baseman. So, understandably with the season series on the line and underlying hatred towards one another this was a big game that both teams wanted to come out on top of. Heading into the bottom of the 9th the Mets lead by a score of 5-4. The previous 3 runs of the Cardinals this afternoon were all scored off the bat of Paul Goldschmidt, the eventual MVP of the National League for the 2022 season. After retiring the first couple of batters in the top of the 9th, up stepped Paul Goldschmidt. And with the game on the line against the Mets best reliever he delivered a game tying single. The Mets would fail to score in the top of the 9th and the Cardinals would then score in the top of the 10th inning to make it 6-5 Cardinals. With the Mets trailing heading into the bottom of the 10th and their season series on the line against a heated rival Cardinals, Mets first baseman Pete Alonso delivered. Pete crushed one of the first pitches he saw in the bottom of the 10th inning and launched a two-run homerun to secure the Mets with the victory against a heated opponent. </p>
-    </article>
-    <br>
-    <br>
-    <br>
-    <img src="../../project/images/helmet.jpeg" alt="Pete Alonso celebrating after hitting home run." class="hm3_img">
-    <div class="clear"></div>
-
-
-    <article class="top4">     
+        <img src="../../project/images/helmet.jpg" alt="Pete Alonso celebrating after hitting home run." class="hm3_img">
+    </div>
+    
+    <div class="row200">
         <h3 class="cd"><span style="color: blue;">Number 5:</span> Mets vs Phillies (4/29)</h3>
         <p class="five_paragraph">Starting off the list at the number 5 spot for the best Mets moments of the 2022 season was a historic victory for the club. On the cold night of April 29th, the Mets hosted their rival, the Philadelphia Phillies. The Mets took the lead in the bottom of the 5th inning off the bat of Jeff Mcneil, a lead that they would not relinquish the rest of the way. The offense was not the story of this game however, it was the pitching staff. In their entire history, the Mets have only ever thrown a no-hitter once. It was thrown by Johan Santana on June 1st 2012. This would be the night of the second no-hitter in Mets history. New Met, Tylor Megill started the game off with 5 innings of his own hitless effort. The special thing about this no-hitter was the combination of pitchers used however. After Megills stellar 5 innings the Mets turned to Drew Smith to continue the outing. Drew threw 1.1 hitless innings of his own to continue the attempt at history. Next up, Joely Rodriguez who offered one of his own hitless innings to keep the hope alive. Seth Lugo then came in after Rodriguez to finish the 8th inning off against the top of the Phillies order, which he did without allowing a hit. Finally, the door was open for the Mets to finish off this historic attempt at the franchises second no-hitter in history. Mets reliever Edwin Diaz, and eventual winner of the Reliever of the Year Award, got the call, and he was dominant. Diaz tossed a hitless inning of his own against some of the best hitters in the National League and the best hitters the Phillies had to offer. On this historic April night the Mets accomplished the first combined no-hitter of their franchises history.</p>
-    </article>
-    <br>
-    <br>
-    <br>
-    <img src="../../project/images/no_hitter.png" alt="Edwin Diaz celebrating no hitter." class="five_img">
-    <div class="clear"></div>
+        <img src="../../project/images/no_hitter.jpg" alt="Edwin Diaz celebrating no hitter." class="five_img">
+    </div>
 
-
-    <article class="top5">     
+    <div class="row200">
         <h3 class="cd"><span style="color: blue;">Number 4:</span> Mets vs Phillies (5/29)</h3>
         <p class="four_paragraph">Number four on this list is again against the Phillies. The Mets faced off again versus the Phillies on May 29th at Citi Field. The Mets were dominant this series against the Phillies, handily winning both of the first two games of the series. Just like early on in the series, the Mets looked dominant against the Phillies early in this game. Thanks to the bats of Francisco Lindor, Eduardo Escobar, and Mark Canha the Mets got off to an early 3-0 lead. The Phillies answered with an RBI by Alec Bohm to make it 3-1. Headed into the end of the game the Mets sweep seemed inevitable. That is until newly acquired Phillies Outfielder Nicholas Castellanos hit a 3 run homerun to give the Phillies the lead and give the Philadelphia Fans his first signature moment on the team. This took the wind out of the Mets sails and the air out of the Stadium on this Sunday night. The Mets were trailing 4-3 heading into the bottom of the 9th inning where the first two batters of the inning were retired quickly. Down to their last out of the night, the Mets turned to their rookie Nick Plummer. Plummer was just called up from the AAA Syracuse Mets due to an injury to outfielder Starling Marte, and Plummer delivered. Cracking a ball deep into the right field seats, Nick Plummer had just secured his first major league hit, a game tying home run against the rival Phillies. Edwin Diaz quickly retired the Phillies in the top of the 10th and the Mets walked it off in the bottom half of the inning to secure the sweep.</p>
-    </article>
-    <img src="../../project/images/plummer.png" alt="Nick Plummer watching his home run." class="four_img">
-    <div class="clear"></div>
-
-
-    <article class="top4">     
+        <img src="../../project/images/plummer.jpg" alt="Nick Plummer watching his home run." class="four_img">
+    </div>
+    
+    <div class="row200">
         <h3 class="cd"><span style="color: blue;">Number 3:</span> Mets at Cardinals (4/25))</h3>
         <p class="three_paragraph">The first improbable finish of the New York Mets season lands third on their best finishes. This far into the season, the Mets had yet to have a signature win. The Mets were in St. Louis played the Cardinals this evening and found themselves trailing 2-0 heading into the top of the 9th after a pitchers duel dominated the entire game. This group of Mets players had yet to have a signature comeback together as a squad this season, but that was about to change. The Mets had a tall task however, having to face All Star closer Giovanny Gallegos with the game on the line. Two of the first three batters in the bottom of the 9th were retired leaving Eduardo Escobar on second base with the rest of the Mets order coming up and two outs. Mark Canha, Mets outfielder, hit a ground ball to third where the 9 time reigning gold glove winning Nolan Arenado stood. It looked like the game was over until Arenado made a throwing error on the play which allowed Canha to reach safely and Escobar to score. The Mets still trailed however 2-1 with two outs. Up next, Jeff Mcneil the Mets second baseman. Mcneil roped a double past the diving glove of first baseman Paul Goldschmidt and the Mets had the tying run on third and the go-ahead run on second with two outs. Next was Dom Smith, a Mets first round pick several drafts ago who had struggled in his few big league seasons. Smith, fighting for a roster spot, hit a ball right to the first baseman. Hustling all the way, Dom beat the pitcher to the bag and was safe. Jankowski scored easily from third but it was the hustle of Jeff Mcneil that provided the go-ahead run. Mcneil scored from second on the play and gave the Mets the lead 3-2. Brandon Nimmo added a two run home-run of his own to extend the Mets lead 5-2, a lead that they would not give up. </p>
-    </article>
-    <br>
-    <img src="../../project/images/dom_dive.png" alt="Dom Smith diving into first." class="three_img">
-    <div class="clear"></div>
-
-
-    <article class="top5">     
+        <img src="../../project/images/dom_dive.jpg" alt="Dom Smith diving into first." class="three_img">
+    </div>
+    
+    <div class="row200">
         <h3 class="cd"><span style="color: blue;">Number 2:</span> Mets at Phillies (8/21)</h3>
         <p class="two_paragraph">The number two spot on the Mets best moments of 2022 comes again against the Phillies. Up to this point in the season the Mets had had their way with the Phillies winning 13 of their 18 meetings up to this point. Of course, the Mets needed to finish off their season series against the Phillies with an incredible win. It did not seem like the Phillies wanted to go down in embarrassing fashion against the Mets this late in the season after dropping the majority of their matchups. In the bottom of the first the Phillies got ahead early with a 4 run inning thanks to a 3-run home run by Alec Bohm. The Mets fought back bit by bit and by the top of the fourth inning the game was tied 4-4. However, the Phillies had other plans. In the bottom of the 4th, Bohm struck again with another 3-run homerun, his second of the game. All looked bleak for the Mets in this contest after fighting back just to trail again by a score of 7-4. With the Phillies bats on fire and the Mets bullpen tired they had to turn to a rookie. Nate Fisher, who was working in a bank as a teller only a few months ago thought his baseball dream was dead. But no, Fisher got the ball here with the game being 7-4 and needing to keep this score. Fisher pitched 3 scoreless innings to keep the Mets in the game making a historic MLB debut. The score stayed 7-4 until the Mets began threatening in the top of the seventh inning. With singles by Mets sluggers Pete Alonso and Daniel Vogelbach the door was open for another Mets comeback against the Phillies. Mark Canha delivered a 3-run homerun of his own to tie the game up 7-7. The game stayed this way until Mets killer Jean Segura parked a ball into the left field seats in the bottom of the 8th inning to put the Phillies back on top 8-7. The Mets were looking at a loss to their rivals to end a dominant season against them. In the top of the ninth inning Jeff Mcneil started the inning with a double off of David Robertson to set the table. Up next, Mark Canha who already offered a game tying homerun earlier in the game. Canha struck again… this time with a deep fly to left field, a 2-run homerun to put the Mets back on top 9-8. Nimmo added a homerun of his own to put the Mets up 10-8. That lead would end up being enough as the Mets won the game 10-9 to finish off a dominant 14-5 record against the Phillies in 2022.</p>
-    </article>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="../../project/images/canha.png" alt="Mark Canha celebrating his second home run of the day." class="two_img">
-    <div class="clear"></div>
-
-
-    <article class="top4">     
+        <img src="../../project/images/canha.jpg" alt="Mark Canha celebrating his second home run of the day." class="two_img">
+    </div>
+    
+    <div class="row200">
         <h3 class="cd"><span style="color: blue;">Number 1:</span> Mets at Phillies (5/5)</h3>
         <p class="one_paragraph">Of course the number one spot on this list had to be against none other than the Phillies. On this night the Mets were opening up a new series against their I-95 rival in Philadelphia. The game looked to be over early when the Mets were looking down the barrel of a 7-0 deficit. Trailing by 7, the Mets did not give up. The fight began with a homerun by Starling Marte in the top of the 6th inning to make it 7-1. This effort seemed to be wasted however because the Mets were trailing by 6 runs still heading into the last inning. The Mets had only overcome a 6 run deficit in the ninth inning once in their history. With all odds against them, the Mets did not give up. Starling Marte singled to start the top of the 9th. Mets shortstop Francisco Lindor then roped a two-run homerun into right center field making the score 7-3 Phillies. Pete Alonso then added a double, and Eduardo Escobar lined out. With one out in the bottom of the 9th the Mets still looked like all hope was lost. Jeff Mcneil singled, moving Alonso to third. Mark Canha came up with one out and hit a single of his own, scoring Alonso making the score 7-4. Dom Smith’s struggles continued where he struck out leaving the Mets down to their last out down 7-4. J.D. Davis doubled down the third base line to score Jeff Mcneil and make the score 7-5. The Mets pinch ran for Davis bringing in Travis Jankowski. With a runner on third and the tying run on second Brandon Nimmo served a ball up the middle and Traivs Jankowski scored from second to tie the game 7-7. Up next, the man who started the inning, Starling Marte. Marte would then take the first pitch of his at bat deep to center for a double, scoring Nimmo from first. The Mets had done it, something they had only done once in their history and finished the 7-run comeback. The score would hold as the Mets would go on to win 8-7. </p>
-    </article>
-    <br>
-    <br>
-    <br>
-    <br>    
-    <br>
-    <img src="../../project/images/7_run_comeback.png" alt="Mets bench celebrating 7-run comeback." class="one_img">
-    <div class="clear"></div>
-    <br>
+        <img src="../../project/images/7_run_comeback.jpg" alt="Mets bench celebrating 7-run comeback." class="one_img">
+    </div>
+    
+
 <hr class="hr1"> 
 
     <img src="../../project/images/stats.jpg" alt="Mets celebrating walk off win." class="stats_img1" id="stats_link">
@@ -597,7 +674,7 @@
 
     <img src="../../project/images/nido.jpg" alt="Mets C Tomás Nido" class="nido">
 
-    <img src="../../project/images/allstars.png" alt="Mets all-star players." class="stars">
+    <img src="../../project/images/allstars.jpg" alt="Mets all-star players." class="stars">
 
 
 <br>
@@ -605,9 +682,18 @@
 <hr class="hr1">
 
     <h2 class="t023" id="2023_link">2023 Outlook</h2>
-    <article class="t023_article">
-    <p class="2023_text">The Mets retained the majority of their key players that were out in Free Agency including their entire offense. The Mets will roll with their top 5 league offense from 2022 in 2023 with an upgraded pitching staff. This offseason the Mets added American League Cy Young winner Justin Verlander to their pitching staff. Along with Verlander the Mets acquired Japanese superstar Kodai Senga to join the rotation. The Mets re-signed star closer Edwin Diaz to a 5 year $102,000,000 deal to make him the highest paid reliever in MLB history. The Mets look to be the favorites in the National League with the Braves, Padres, Phillies, and Dodgers not far behind. It should be a very exciting year in Queens.</p>
-    </article>
-    <img src="../../project/images/2023_outlook.jpeg" alt="Mets pitcher Justin Verlander with Mets owner Steve Cohen." class="t023_img">
+    <div class="row1000">
+        <div class="col1000">
+        <p class="t023_text">The Mets retained the majority of their key players that were out in Free Agency including their entire offense. The Mets will roll with their top 5 league offense from 2022 in 2023 with an upgraded pitching staff. This offseason the Mets added American League Cy Young winner Justin Verlander to their pitching staff. Along with Verlander the Mets acquired Japanese superstar Kodai Senga to join the rotation. The Mets re-signed star closer Edwin Diaz to a 5 year $102,000,000 deal to make him the highest paid reliever in MLB history. The Mets look to be the favorites in the National League with the Braves, Padres, Phillies, and Dodgers not far behind. It should be a very exciting year in Queens.</p>
+        </div>
+        <div class="col2000">
+        <img src="../../project/images/2023_outlook.jpg" alt="Mets pitcher Justin Verlander with Mets owner Steve Cohen." class="t023_img">
+        </div>
+    </div>
+
+    <div class="row200">
+        <p class="t023_text2">The Mets retained the majority of their key players that were out in Free Agency including their entire offense. The Mets will roll with their top 5 league offense from 2022 in 2023 with an upgraded pitching staff. This offseason the Mets added American League Cy Young winner Justin Verlander to their pitching staff. Along with Verlander the Mets acquired Japanese superstar Kodai Senga to join the rotation. The Mets re-signed star closer Edwin Diaz to a 5 year $102,000,000 deal to make him the highest paid reliever in MLB history. The Mets look to be the favorites in the National League with the Braves, Padres, Phillies, and Dodgers not far behind. It should be a very exciting year in Queens.</p>
+        <img src="../../project/images/2023_outlook.jpg" alt="Mets pitcher Justin Verlander with Mets owner Steve Cohen." class="t023_img">
+    </div>
 </body>
 </html>

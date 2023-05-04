@@ -11,21 +11,25 @@ nav a{
     color: orange;
 }
 .banner{width: 100%;}
-.intro2{
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro2, .intro22{
     background-color: #f9bc4c;
     margin: 10px;
     padding:8px;
     border-radius: 2em;
-    width: 45%;
-    float: left;
     font-size: 20px;
+    flex: 1;
+    justify-content: center;
 }
-.intro3{
+.intro3, .quote11{
     color: rgb(0, 0, 255);
     font-size: 50px;
-    max-width: 48%;
-    float: left;
-    margin-left: 15px;
+    flex: 1;
 }
 .clear{
     clear: both;
@@ -35,22 +39,13 @@ nav a{
     background: blue;
 }
 .nimmo_catch{
-    width: 80%;
     border-radius: 2em;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
-.top5{
-    background-color: #f9bc4c;
-    margin: 10px;
-    padding:8px;
-    border-radius: 2em;
-    font-size: 17px;
-    width: 50%;
-    float: left;
-}
 .top4{
     background-color: #f9bc4c;
     margin: 10px;
@@ -64,6 +59,7 @@ nav a{
 .recap_title1{
     font-size: 80px;
     color: blue;
+    max-width: 100%;
 }
 .honerable_mentions, .stats_title2{
     font-size: 40px;
@@ -72,8 +68,11 @@ nav a{
 
 
 .hm3_img, .hm2_img, .hm1_img, .five_img, .four_img, .three_img, .two_img, .one_img{
-    width: 47%;
+    max-width:100%;
     border-radius: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stats_img1{
@@ -86,21 +85,25 @@ nav a{
     color: blue;
 }
 
-.row1, .row2{display: flex;}
+.row1, .row2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 .row1_1{
     flex:1;
-    margin-left: 100px;
 }
-.row1_2{flex:1;}
+.row1_2{flex:3;}
 
 .column1, .column2, .column3{
     flex:1;
-    justify-content:space-around;
-    margin: 20px;
+    margin: 2px;
     background-color: #f9bc4c;
     border-radius: 2em;
     padding: 10px;
-    padding-left: 70px;
+    text-align: center;
+    max-width: 100%;
 }
 table{
     font-size: 20px;
@@ -118,7 +121,7 @@ table, th, td{
 }
 
 .shoewalter, .edwin, .jeff, .pete, .nido, .stars{
-    width: 49%
+    width: 49.5%
 }
 
 .text{
@@ -143,18 +146,62 @@ table, th, td{
     color: blue;
 }
 .t023_img{
-    width: 49%;
+    max-width: 100%;
     border-radius: 2em;
 }
 
-.t023_article
-{
-    width: 48%;
-    float: left;
+
+.row100{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row200{
+    align-items: center;
+    justify-content: center;
+}
+
+
+.col100, .col400, .row200, .t023_text, .row1000{
+    flex:2;
     background-color: #f9bc4c;
-    font-size: 30px;
-    padding: 10px;
     margin: 10px;
-    margin-top: 25px;
+    padding:8px;
     border-radius: 2em;
+    font-size: 17px;
+}
+.col200, .col300{
+    flex:1;
+}
+
+.row1000{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col1000{
+    flex: 2;
+}.col2000{
+    flex:1;
+}
+
+@media only screen and (min-width:799px) {
+    .intro22, .quote11, .row200{display: none;}
+}
+
+@media only screen and (max-width:800px) {
+    .intro2, .quote1, .intro3, .row100, .col100, .col200, .col300, .col400, .row1000, .col1000, .col2000, .nav{display: none;}
+}
+
+#hamicon{width: 40px;}
+.firstrow{display: flex;}
+
+@media only screen and (min-width:800px) {
+    #hamicon, #close{display: none;}
+    #nav2{display: none;}
+}
+
+@media only screen and (max-width:799px) {
+    a {display: block;}
 }
