@@ -63,11 +63,11 @@ nav a{
 }
 .honerable_mentions, .stats_title2{
     font-size: 40px;
-    color: orange;
+    color: blue;
 }
 
 
-.hm3_img, .hm2_img, .hm1_img, .five_img, .four_img, .three_img, .two_img, .one_img{
+.hm3_img, .hm2_img, .hm1_img, .five_img, .four_img, .three_img, .two_img, .one_img, .t023_img{
     max-width:100%;
     border-radius: 2em;
     display: block;
@@ -117,7 +117,7 @@ table, th, td{
 .awards_title{
     font-size: 80px;
     text-align: center;
-    color: orange;
+    color: blue;
 }
 
 .shoewalter, .edwin, .jeff, .pete, .nido, .stars{
@@ -145,10 +145,7 @@ table, th, td{
     text-align: center;
     color: blue;
 }
-.t023_img{
-    max-width: 100%;
-    border-radius: 2em;
-}
+
 
 
 .row100{
@@ -184,6 +181,20 @@ table, th, td{
     flex: 2;
 }.col2000{
     flex:1;
+}
+
+
+.skip{
+    background-color: blue;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-decoration: none;
+    position: absolute; /*positions element relative to top-left of viewport */
+    top: 10px;
+    left:-999px; /*push it off the left side of the sceen */
+}
+.skip:focus{
+    left:10px /*bring it back when they tab to it */
 }
 
 @media only screen and (min-width:799px) {
