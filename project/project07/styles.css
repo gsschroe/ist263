@@ -1,0 +1,160 @@
+body{
+    background-color: #ffd588;
+    font-family: Roboto Condensed;
+}
+nav{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+nav a{
+    color: orange;
+}
+.banner{width: 100%;}
+.intro2{
+    background-color: #f9bc4c;
+    margin: 10px;
+    padding:8px;
+    border-radius: 2em;
+    width: 45%;
+    float: left;
+    font-size: 20px;
+}
+.intro3{
+    color: rgb(0, 0, 255);
+    font-size: 50px;
+    max-width: 48%;
+    float: left;
+    margin-left: 15px;
+}
+.clear{
+    clear: both;
+}
+.hr1{
+    border-top: 3px solid blue;
+    background: blue;
+}
+.nimmo_catch{
+    width: 80%;
+    border-radius: 2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top5{
+    background-color: #f9bc4c;
+    margin: 10px;
+    padding:8px;
+    border-radius: 2em;
+    font-size: 17px;
+    width: 50%;
+    float: left;
+}
+.top4{
+    background-color: #f9bc4c;
+    margin: 10px;
+    padding:8px;
+    border-radius: 2em;
+    font-size: 17px;
+    width: 50%;
+    float: right;
+}
+
+.recap_title1{
+    font-size: 80px;
+    color: blue;
+}
+.honerable_mentions, .stats_title2{
+    font-size: 40px;
+    color: orange;
+}
+
+
+.hm3_img, .hm2_img, .hm1_img, .five_img, .four_img, .three_img, .two_img, .one_img{
+    width: 47%;
+    border-radius: 2em;
+}
+
+.stats_img1{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.stats_title3{
+    font-size: 40px;
+    color: blue;
+}
+
+.row1, .row2{display: flex;}
+.row1_1{
+    flex:1;
+    margin-left: 100px;
+}
+.row1_2{flex:1;}
+
+.column1, .column2, .column3{
+    flex:1;
+    justify-content:space-around;
+    margin: 20px;
+    background-color: #f9bc4c;
+    border-radius: 2em;
+    padding: 10px;
+    padding-left: 70px;
+}
+table{
+    font-size: 20px;
+    width: 80%;
+}
+
+table, th, td{
+    border: 1px solid blue;
+}
+
+.awards_title{
+    font-size: 80px;
+    text-align: center;
+    color: orange;
+}
+
+.shoewalter, .edwin, .jeff, .pete, .nido, .stars{
+    width: 49%
+}
+
+.text{
+    font-size: 50px;
+    color: blue;
+}
+
+.r1{
+    display: flex;
+}
+
+.c1, .c22{
+    flex:3;
+}
+.c2, .c11{
+    flex:1;
+}
+
+.t023{
+    font-size: 80px;
+    text-align: center;
+    color: blue;
+}
+.t023_img{
+    width: 49%;
+    border-radius: 2em;
+}
+
+.t023_article
+{
+    width: 48%;
+    float: left;
+    background-color: #f9bc4c;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+    border-radius: 2em;
+}
