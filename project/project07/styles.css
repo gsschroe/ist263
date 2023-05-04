@@ -197,6 +197,71 @@ table, th, td{
     left:10px /*bring it back when they tab to it */
 }
 
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 0 10px;
+    line-height: 40px;
+    color: orange;
+    background:blue;
+    text-decoration: none;
+  }
+  
+  nav ul li:hover > a {
+    background: #2267f1;
+  }
+  
+  nav ul li:hover a:hover {
+    background: #2267f1;
+  }
+  
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: blue;
+    padding: 0;
+  }
+  
+  nav ul ul li {
+    float: none;
+    width: 200px;
+  }
+  
+  nav ul ul a {
+    line-height: 40px;
+    padding: 0 10px;
+  }
+  
+  nav ul ul ul {
+    top: 0;
+    left: 100%;
+  }
+  
+  nav ul li:hover > ul {
+    display: inherit;
+  }
+  
+  nav ul ul li:hover > ul {
+    display: inherit;
+  }
+
+
+
 @media only screen and (min-width:799px) {
     .intro22, .quote11, .row200{display: none;}
 }
@@ -209,7 +274,7 @@ table, th, td{
 .firstrow{display: flex;}
 
 @media only screen and (min-width:800px) {
-    #hamicon, #close{display: none;}
+    #hamicon, #close, .nav3{display: none;}
     #nav2{display: none;}
 }
 
