@@ -198,20 +198,20 @@ table, th, td{
 }
 
 
-nav ul {
+.nav3 ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
   
-  nav ul li {
+  .nav3 ul li {
     position: relative;
     float: left;
     margin: 0;
     padding: 0;
   }
   
-  nav ul li a {
+  .nav3 ul li a {
     display: block;
     padding: 0 10px;
     line-height: 40px;
@@ -220,15 +220,15 @@ nav ul {
     text-decoration: none;
   }
   
-  nav ul li:hover > a {
+  .nav3 ul li:hover > a {
     background: #2267f1;
   }
   
-  nav ul li:hover a:hover {
+  .nav3 ul li:hover a:hover {
     background: #2267f1;
   }
   
-  nav ul ul {
+  .nav3 ul ul {
     display: none;
     position: absolute;
     top: 100%;
@@ -237,36 +237,36 @@ nav ul {
     padding: 0;
   }
   
-  nav ul ul li {
+  .nav3 ul ul li {
     float: none;
     width: 200px;
   }
   
-  nav ul ul a {
+  .nav3 ul ul a {
     line-height: 40px;
     padding: 0 10px;
   }
   
-  nav ul ul ul {
+  .nav3 ul ul ul {
     top: 0;
     left: 100%;
   }
   
-  nav ul li:hover > ul {
+  .nav3 ul li:hover > ul {
     display: inherit;
   }
   
-  nav ul ul li:hover > ul {
+  .nav3 ul ul li:hover > ul {
     display: inherit;
   }
 
 
 
-@media only screen and (min-width:799px) {
+@media only screen and (min-width:800px) {
     .intro22, .quote11, .row200{display: none;}
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:799px) {
     .intro2, .quote1, .intro3, .row100, .col100, .col200, .col300, .col400, .row1000, .col1000, .col2000, .nav{display: none;}
 }
 
